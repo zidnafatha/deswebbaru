@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<title>Latihan 3</title>
+	<title>jQuery</title>
+</head>
+<body>
+	<center>
+		<h1>Penghitung Karakter</h1>
+		<br>
+		<textarea name="ulasan" id="ulasan" rows="4" cols="60"></textarea>
+		<br>
+		<h3>Jumlah Huruf : <span id="hitung">0</span></h3>
+		<div id="bar"></div>
+	</center>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$('#ulasan').attr('maxlength', '50')
+			$('#ulasan').keyup(function(){
+				var str = $('#ulasan').val();
+				$('#hitung').html(str.length);
+			$('#bar').progressbar('option', 'value', str.length)
+		});
+			$('#bar').progressbar({
+				value:0,
+				max:50
+			}); 
+		});
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body{
+	margin: 10% 30%;
+}
+
+h1{
+	padding: 5%;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	background-color: darkgrey;
+	text-align: center;
+}
+
+.input{
+	padding: 10%;
+	padding-bottom: 5%;
+	background-color: darkgrey;
+}
+
+#input1{
+	margin-right: 10%;
+}
+
+#angka1{
+	width: 70%;
+}
+
+#input2{
+	margin-right: 10%;
+}
+
+#angka2{
+	width: 70%;
+}
+
+#total{
+	margin-right: 15%;
+}
+
+#hasil{
+	width: 70%;
+}
+
+.button{
+	padding: 2%;
+	background-color: grey;
+	text-align: center;
+}

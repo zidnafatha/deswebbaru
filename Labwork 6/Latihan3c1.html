@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Animasi Transisi CSS3</title>
+
+	<style type="text/css">
+		.box{
+			width: 40%;
+			height: 100px;
+			background: orange;
+			border: 2px solid #212121;
+			transition: width 2s, height 2s,transform 2s;
+		}
+
+		/*landscape*/
+		@media(orientation: landscape){
+			.box{
+				width: 100%;
+				border-radius: 500px/50px;
+				background: darkblue;
+			}
+			.box:last-child{
+				transform: rotate(360deg);
+				transition-duration: 2s;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h3>Transisi CSS3</h3>
+
+	<div class="box"></div>
+	<p>
+		ubah orientasi ke lanscape/portait dan sebaliknya untuk melihat efek transisi
+	</p>
+</body>
+</html>

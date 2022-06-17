@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://resources/demos/style.css">
+	<script src="jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <style type="text/css">
+    	#dialog{
+    		padding-top: 0;
+    		width: 10%;
+    	}
+    </style>
+	<title>Dialog</title>
+</head>
+<body>
+	<button id="bukaDialog">Klik Saya !</button>
+	<div id="dialog" title="Hello World">
+		Halo, Salam Kenal !
+	</div>
+
+	<script type="text/javascript">
+		$(function(){
+			$('#dialog').dialog({autoOpen: false});
+			$('#bukaDialog').click(function(){
+				$('#dialog').dialog("open")
+			});
+		});
+	</script>
+</body>
+</html>

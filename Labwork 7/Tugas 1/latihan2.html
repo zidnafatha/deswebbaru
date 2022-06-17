@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HightLight</title>
+	<style>
+		.list.active{
+			color: red;
+			background-color: yellow;
+			font-weight: 1000;
+		}
+	</style>
+</head>
+<body>
+	<h1>PTIK FKIP UNS</h1>
+	<p>The <span class="list">Faculty of Teacher Training and Education</span>, <span class="list">Sebelas Maret University</span>, Surakarta is an <span class="list">Educational Personnel Education Institution (LPTK)</span> which has 24 study programs in 6 majors. Each study program has its own characteristics in producing <span class="list">superior, strong and intelligent educational staff</span>.</span>
+	<p>The <span class="list">Informatics and Computer Technology Education (PTIK)</span> study program is planned to take shelter in the management of the <span class="list">Engineering and Vocational Education (PTK)</span> department. This placement revises our previous statement, where the PTIK study program is under the P.MIPA department. PTIK is a study program that will produce graduates who are <span class="list">prioritized to teach in vocational/vocational programs.</span> So, it would be better if PTIK was under the PTK department which oversees vocational programs such as <span class="list">Building Engineering Education</span>, and <span class="list">Mechanical Engineering Education</span>. To meet the needs of lecturers in the field of information technology that cannot be met by the PTK department, PTIK will conduct <span class="list">resource sharing with the mathematics study program.</span></p>
+
+	<button onclick="change()">Highlight Paragraf</button>
+
+	<script>
+		const highlight = document.querySelectorAll('.list');
+
+		function change(){
+			highlight.forEach( (text) => {
+				if(text.classList.contains('active')){
+					text.classList.remove('active')
+				} else {
+					text.classList.add('active')
+				}
+			})
+		};
+	</script>
+</body>
+</html>
+
+
+
+
+		
+
+		const date = dayjs()
+		const tanggal = date.format('dddd D MMMM YYYY')
+		hari.innerHTML = tanggal
+
+		const waktu = dayjs()
+		const kapan = waktu.format('HH:mm:ss')
+		jam.innerHTML = kapan

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Latihan 5</title>
+</head>
+<body>
+	<h1>Formulir Pendaftaran Anggota Perpustakaan UNS</h1>
+	<h3 style="padding: 5px 20px">Silahkan isi formulir berikut dengan benar</h3>
+	<form style="padding: 5px 20px">
+		<table>
+			<tr>
+				<td><label for="nama">Nama</label></td>
+				<td>: <input type="text" name="nama" placeholder="Masukkan Nama" required><br></td>
+			</tr>
+			<tr>
+				<td><label for="nim">NIM</label></td>
+				<td>: <input type="text" name="nim" placeholder="Masukkan NIM" required><br></td>
+			</tr>
+			<tr>
+				<td><label for="ttl">TTL</label></td>
+				<td>: <input type="datetime-local" name="ttl"></td>
+			</tr>
+			<tr>
+				<td><label for="email">E-mail</label></td>
+				<td>: <input type="email" name="email" placeholder="Masukkan E-mail"></td>
+			</tr>
+			<tr>
+				<td><label for="jeniskelamin">Jenis Kelamin</label></td>
+				<td>: <select> 
+					<option>Laki - Laki</option>
+					<option>Perempuan</option>
+				</select><br></td>
+			</tr>
+			<tr>
+				<td><label for="angkatan">Angkatan</label><br></td>
+				<td><input type="radio" name="angkatan">2017+<br>
+				<input type="radio" name="angkatan">2018<br>
+				<input type="radio" name="angkatan">2019<br>
+				<input type="radio" name="angkatan">2020<br>
+				<input type="radio" name="angkatan">2021<br></td>
+			</tr>
+			<tr>
+				<td><label for="saran">Saran Saran</label></td>
+				<td>: <input type="textarea" name="saran" placeholder="Saran untuk Perpustakaan UNS"></td>
+			</tr>
+			<tr>
+				<td align="right" colspan="2"><input class="contact-submit" type="submit" value="Kirim"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+
